@@ -1,10 +1,21 @@
 // Bootstrap
 @use "./bootstrap.scss" as bs;
 
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Josefin+Sans&display=swap");
+
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/css/fontawesome.css";
 @import "~@fortawesome/fontawesome-free/css/brands.css";
 @import "~@fortawesome/fontawesome-free/css/solid.css";
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Cinzel Decorative";
+}
 
 hr {
   &.bg {
@@ -15,6 +26,18 @@ hr {
   }
 }
 
-a {
-  text-decoration: none;
+.tooltip {
+  .tooltip-inner {
+    max-width: unset;
+  }
+}
+
+.sidebar {
+  font-family: "Josefin Sans";
+
+  .contact {
+    i {
+      min-width: 18px;
+    }
+  }
 }
