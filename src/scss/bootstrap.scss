@@ -1,3 +1,5 @@
+$resume: #2a5b50;
+
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
@@ -12,21 +14,8 @@
 @import "~bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
-/*
-  Add to Maps by merging in new colors
-  $custom-colors: (
-    "custom-color": #900
-  );
-
-  $theme-colors: map-merge($theme-colors, $custom-colors);
-
-  ---
-
-  Remove from Maps by removing keys
-  $theme-colors: map-remove($theme-colors, "info", "light", "dark");
-*/
 $custom-colors: (
-  "resume": #2a5b50
+  "resume": $resume
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -71,4 +60,109 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "~bootstrap/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+$utilities: map-merge(
+  $utilities,
+  (
+    "margin":
+      map-merge(
+        map-get($utilities, "margin"),
+        (
+          print: true
+        )
+      ),
+    "margin-x":
+      map-merge(
+        map-get($utilities, "margin-x"),
+        (
+          print: true
+        )
+      ),
+    "margin-y":
+      map-merge(
+        map-get($utilities, "margin-y"),
+        (
+          print: true
+        )
+      ),
+    "margin-start":
+      map-merge(
+        map-get($utilities, "margin-start"),
+        (
+          print: true
+        )
+      ),
+    "margin-top":
+      map-merge(
+        map-get($utilities, "margin-top"),
+        (
+          print: true
+        )
+      ),
+    "margin-end":
+      map-merge(
+        map-get($utilities, "margin-end"),
+        (
+          print: true
+        )
+      ),
+    "margin-bottom":
+      map-merge(
+        map-get($utilities, "margin-bottom"),
+        (
+          print: true
+        )
+      ),
+    "padding":
+      map-merge(
+        map-get($utilities, "padding"),
+        (
+          print: true
+        )
+      ),
+    "padding-x":
+      map-merge(
+        map-get($utilities, "padding-x"),
+        (
+          print: true
+        )
+      ),
+    "padding-y":
+      map-merge(
+        map-get($utilities, "padding-y"),
+        (
+          print: true
+        )
+      ),
+    "padding-start":
+      map-merge(
+        map-get($utilities, "padding-start"),
+        (
+          print: true
+        )
+      ),
+    "padding-top":
+      map-merge(
+        map-get($utilities, "padding-top"),
+        (
+          print: true
+        )
+      ),
+    "padding-end":
+      map-merge(
+        map-get($utilities, "padding-end"),
+        (
+          print: true
+        )
+      ),
+    "padding-bottom":
+      map-merge(
+        map-get($utilities, "padding-bottom"),
+        (
+          print: true
+        )
+      )
+  )
+);
+
+// 8. Generate the API
 @import "~bootstrap/scss/utilities/api";

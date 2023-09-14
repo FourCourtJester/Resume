@@ -19,7 +19,7 @@ h3 {
 
 hr {
   &.bg {
-    border-top-color: map-get(bs.$custom-colors, "resume");
+    border-top-color: var(--bs-resume);
     border-top-width: 4px;
     margin-right: calc(-#{map-get(bs.$spacers, 3)});
     opacity: 1;
@@ -39,5 +39,11 @@ hr {
     i {
       min-width: 18px;
     }
+  }
+
+  .skills,
+  .notables,
+  .shoutcasts {
+    columns: 2;
   }
 }

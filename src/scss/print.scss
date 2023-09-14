@@ -1,0 +1,89 @@
+@use "./bootstrap.scss" as bs;
+
+@media print {
+  @page {
+    size: a3 portrait;
+    margin: 0.25in;
+  }
+
+  :root,
+  [data-bs-theme="dark"] {
+    --bs-body-bg: transparent;
+    --bs-body-color: #000;
+    --bs-resume: #ddd;
+    --bs-resume-rgb: 221, 221, 221;
+  }
+
+  *,
+  ::after,
+  ::before {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  html,
+  body,
+  #app,
+  .App {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font: 12pt;
+  }
+
+  a {
+    &:not(.btn) {
+      text-decoration: underline;
+    }
+  }
+
+  [data-title] {
+    &::after {
+      content: " (" attr(data-title) ")";
+    }
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3,
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  //  ---
+
+  .container {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  .sidebar {
+    height: fit-content;
+    min-height: 100%;
+
+    .skills,
+    .notables {
+      list-style: circle inside;
+      margin-left: map-get(bs.$spacers, 0);
+      margin-right: map-get(bs.$spacers, 0);
+    }
+  }
+}

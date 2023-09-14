@@ -1,7 +1,7 @@
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 
 function ToolTip(properties) {
-  const { children, id, placement = 'auto', title, trigger = 'hover' } = properties
+  const { children, id, placement = 'auto', title, trigger = ['hover', 'focus'] } = properties
 
   return (
     <OverlayTrigger

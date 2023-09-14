@@ -1,0 +1,69 @@
+  [
+    {
+      "name": "HTML",
+      "proficiency": 100
+    },
+    {
+      "name": "CSS",
+      "proficiency": 100
+    },
+    {
+      "name": "Javascript",
+      "proficiency": 100
+    },
+    {
+      "name": "Node.js",
+      "proficiency": 100
+    },
+    {
+      "name": "Express.js",
+      "proficiency": 100
+    },
+    {
+      "name": "MongoDB",
+      "proficiency": 100
+    },
+    {
+      "name": "Github",
+      "proficiency": 80
+    },
+    {
+      "name": "React",
+      "proficiency": 80
+    },
+    {
+      "name": "Redux",
+      "proficiency": 80
+    },
+    {
+      "name": "API Integration",
+      "proficiency": 80,
+      "css": {
+        "fontSize": "0.825rem"
+      }
+    },
+    {
+      "name": "Linux",
+      "proficiency": 50
+    },
+    {
+      "name": "Docker",
+      "proficiency": 50
+    },
+    {
+      "name": "Bash",
+      "proficiency": 40
+    },
+    {
+      "name": "Jira",
+      "proficiency": 40
+    },
+    {
+      "name": "Zoho",
+      "proficiency": 40
+    },
+    {
+      "name": "PHP",
+      "proficiency": 10
+    }
+  ]
