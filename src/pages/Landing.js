@@ -101,7 +101,7 @@ function Landing() {
           </ListGroup>
         </Col>
         {/* Sidebar */}
-        <Col className="sidebar bg-resume p-3" xs="4">
+        <Col className="sidebar bg-resume p-3 pb-0" xs="4">
           {/* Contact Information */}
           <div className="contact mb-3">
             <p className="mb-0">
@@ -393,7 +393,7 @@ function Landing() {
             </p>
           </div>
           {/* Shoutcasts */}
-          <div className="shoutcasts-container">
+          <div className="shoutcasts-container mb-3">
             <h3 className="text-uppercase">
               <i className="fa-solid fa-microphone me-2 d-print-none" /> Commentary
             </h3>
@@ -409,6 +409,12 @@ function Landing() {
               </Col>
             </Row>
           </div>
+          <hr />
+          {/* Footer */}
+          <p>This resume was built with Create React App, Sass, Bootstrap and Fonts Awesome.</p>
+          <p>
+            The online experience can be found at <a href="//fourcourtjester.github.io/Resume">http://fourcourtjester.github.io/Resume</a>.
+          </p>
         </Col>
       </Row>
     </Container>
