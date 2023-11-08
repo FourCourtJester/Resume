@@ -1,4 +1,4 @@
-import { Alert, Badge, Col, Container, ListGroup, ProgressBar, Row, Stack } from 'react-bootstrap'
+import { Alert, Badge, Col, Container, ListGroup, ProgressBar, Row } from 'react-bootstrap'
 import classNames from 'classnames'
 
 import { Tooltip } from 'components'
@@ -412,7 +412,7 @@ function Landing() {
           <hr />
           {/* Footer */}
           <p>This resume was built with Create React App, Sass, Bootstrap and Fonts Awesome.</p>
-          <p>
+          <p className="mb-0">
             The online experience can be found at <a href="//fourcourtjester.github.io/Resume">http://fourcourtjester.github.io/Resume</a>.
           </p>
         </Col>

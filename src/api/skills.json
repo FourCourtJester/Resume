@@ -37,10 +37,15 @@
     },
     {
       "name": "API Integration",
-      "proficiency": 80,
-      "css": {
-        "fontSize": "0.825rem"
-      }
+      "proficiency": 80
+    },
+    {
+      "name": "Typescript",
+      "proficiency": 50
+    },
+    {
+      "name": "Fastify",
+      "proficiency": 50
     },
     {
       "name": "Linux",
